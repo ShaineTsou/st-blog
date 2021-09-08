@@ -1,0 +1,54 @@
+@import "../../styles/themes";
+@import "../../styles//mixins";
+
+.home-container {
+  width: 100%;
+  margin-top: 10vh;
+  height: 90vh;
+  padding: 30px 0px;
+  text-align: center;
+
+  .home-content-container {
+    width: 60%;
+    margin-left: 10vw;
+
+    h3 {
+      font-size: 1.75rem;
+      line-height: 1rem;
+      color: $subHeadlineColor;
+    }
+
+    h1 {
+      font-size: 4.5rem;
+      line-height: 2rem;
+    }
+
+    h2 {
+      font-size: 3.25rem;
+      line-height: 1.5rem;
+    }
+
+    .summary {
+      width: 100%;
+      color: $paragraphColor;
+      @include paragraphStyles;
+      font-size: 1.25rem;
+    }
+
+    .connection-container {
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 30px;
+
+      .social-container {
+        width: 30%;
+        justify-content: flex-start;
+        margin: auto 0px;
+
+        .social-btn {
+          margin: 0px 15px;
+        }
+      }
+    }
+  }
+}
